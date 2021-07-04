@@ -21,13 +21,15 @@ tr:nth-child(even) {
 <body>
 <table>
     <tr>
-      <th>Nama</th>
-      <th>Harga</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Pic</th>
     </tr>
     <tr>
         {% for obj in dict %}
       <td>{{(obj['name'])}}</td>
       <td>{{(obj['price'])}}</td>
+      <td><img src="{{(obj['image_url'])}}"></td>
     </tr>
     {% endfor %}
     <table>
